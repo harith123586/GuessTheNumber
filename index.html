@@ -9,24 +9,24 @@
        <input type ="number" placeholder ="insert Number" 
        id="guess"></input>
     <button oneclick="checkGuess()">tekanboss</button>
-    <p>Result</p>
+    <p id="result">Result</p>
    </body>
    <script>
        let secretNumber = Math.floor(Math.random() * 100) + 1;
 
         function checkGuess(){
 
-          let guess = document.getElementById("Guess").value;
+          let guess = document.getElementById("guess").value;
           let resultElement = document.getElementById("result");
           if(guess == secretNumber)
           {
-               resultElement.textContent = "Betul Masbro!!"
+               resultElement.textContent = "Betul Masbro!!";
           }
           else if (guess > secretNumber){
-              resultElement.textContent = "Nombor dia besar masbro, nombor lebih kecil dari tekaan anda"
+              resultElement.textContent = "Nombor dia besar masbro, nombor lebih kecil dari tekaan anda";
           }
         else{
-          resultElement.textcontent = "Nombor kecil, nombor lebih besar dari tekaan anda"
+          resultElement.textContent = "Nombor kecil, nombor lebih besar dari tekaan anda";
         }
         }
    </script>

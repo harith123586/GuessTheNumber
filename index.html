@@ -18,18 +18,16 @@
 
           let guess = document.getElementById("Guess").value;
           let resultElement = document.getElementById("result");
-        }
           if(guess == secretNumber)
           {
                resultElement.textContent = "Betul Masbro!!"
           }
           else if (guess > secretNumber){
-              resultElement.textContent = "Nombor dia besar masbro, nombor lebih kecil dari tekaan nombor"
+              resultElement.textContent = "Nombor dia besar masbro, nombor lebih kecil dari tekaan anda"
           }
         else{
-          resultElement.textcontent = "nombor kecil, nombor lebih besar dari tekaan anda"
-
-          }
+          resultElement.textcontent = "Nombor kecil, nombor lebih besar dari tekaan anda"
+        }
         }
    </script>
 </html>

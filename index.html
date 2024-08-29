@@ -9,6 +9,27 @@
        <input type ="number" placeholder ="insert Number" 
        id="guess"></input>
     <button>Tekanboss</button>
+    <button oneclick="checkGuess()">Guess</button>
     <p>Result</p>
    </body>
+   <script>
+       let secretNumber = Math.Floor(Math.Random() * 100) + 1;
+
+        function checkGuess(){
+
+          let guess = document.getElementById("Guess").value;
+          let resultElement = document.getElementById("result");
+
+          if(guess == secretNumber)
+          {
+               resultElement.textContent = "Betul Masbro!!"
+          }
+          else if (guess > secretNumber){
+              resultElement.textContent = "Nombor dia besar masbro, nombor lebih kecil dari tekaan nombor"
+        }   
+        else{
+          resultElement.textcontent = "nombor kecil, nombor lebih besar dari tekaan anda"
+          )
+        }
+   </script>
 </html>
